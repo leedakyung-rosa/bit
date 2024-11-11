@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소선택자</title>
+    <style>
+        p:nth-of-type(1) {
+            color: rgb(110, 170, 219);
+            background-color: beige;
+            display: inline;
+        }
+
+        p:nth-of-type(1):after {
+            content: "다경";
+            color: pink;
+        }
+
+        p:before {
+            content: "🌼";
+        }
+
+        p:nth-child(4) {
+            color: brown;
+
+        }
+
+        p:nth-last-of-type(3):after {
+            content: "🌼";
+        }
+
+        p:nth-last-of-type(2):after {
+            content: " 메로나";
+        }
+
+        p:last-of-type:after {
+            content: ". 감사합니다!!";
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/index.html">홈으로</a> <br>
+    <P>나의사랑</P>
+    <P>나의가족</P>
+    <P>행복미래</P>
+    <P>올 때</P>
+    <P>이제 끝</P>
+</body>
+
+</html>

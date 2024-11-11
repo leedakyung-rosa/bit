@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+    <style>
+        a {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:visited {
+            color: greenyellow;
+        }
+
+        a:disabled,
+        input:disabled,
+        button:disabled {
+            color: gray;
+            background-color: gray;
+        }
+
+        input:active {
+            color: white;
+            background-color: rgb(52, 99, 141);
+        }
+
+        button:active {
+            color: rgb(220, 188, 128);
+            background-color: rgb(143, 115, 21);
+        }
+
+        div {
+            background-color: aquamarine;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        div:hover {
+            background-color: antiquewhite;
+            transform: scale(1, 2);
+        }
+
+        .red-input:focus {
+            background-color: rgb(160, 15, 15);
+        }
+
+        .blue-input:focus {
+            background-color: rgb(29, 17, 194);
+        }
+
+        input[type]+label {
+            color: blueviolet;
+        }
+
+        input[type]:not(:checked)+label {
+            color: brown;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/index.html">홈으로</a> <br>
+    <a href="http://naver.com">네이버링크</a>
+    <input type="button" value="눌러보세요" disabled />
+    <button disabled>눌러보세요.</button>
+    <hr />
+    <input class="red-input" value="클릭하면 빨갛게 됩니다.">
+    <input class="blue-input" value="클릭하면 파랗게 됩니다.">
+    <hr>
+    <input type="checkbox" id="eat" />
+    <label for="eat">간식</label>
+    <input type="checkbox" id="meal" />
+    <label for="meal">식사</label>
+    <input type="radio" name="loc" />
+    "한국"
+    <input type="radio" name="loc" />
+    "해외"
+    <hr />
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</body>
+
+</html>

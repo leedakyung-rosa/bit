@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background-color: bisque;
+        }
+
+        header,
+        footer {
+            height: 13%;
+            flex: 2;
+            background-color: antiquewhite;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        nav {
+            flex: 1;
+            height: 7%;
+            background-color: beige;
+        }
+
+        main {
+            flex: 12;
+            height: 100%;
+            display: flex;
+        }
+
+        aside,
+        section {
+            width: 20%;
+            flex: 1;
+        }
+
+        article {
+            width: 60%;
+            flex: 3;
+            background-color: azure;
+        }
+
+        footer {
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.wrap>header+nav+main+footer -->
+    <div class="wrap">
+        <header>Never</header>
+        <nav>nav</nav>
+        <main>
+            <!-- aside+article+section -->
+            <aside>aside</aside>
+            <article>article</article>
+            <section>section</section>
+        </main>
+        <footer>정보처리방침청소년보호정책네이버 정책고객센터ⓒ NAVER Corp.</footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+html,
+body {
+    /* background-color: pink; */
+    height: 100%;
+}
+
+@media(max-width:1000px) {
+    body {
+        color: beige;
+        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWouce5koVXxhYtO4tAn1-kAETFRythlrqQ&s)no-repeat;
+        background-size: cover;
+
+        h1 {
+            border-bottom: 1px solid #100f0f;
+            padding: 10px;
+        }
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        color: yellow;
+        background: url(https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/3d281f7d-6b44-4550-ab20-856a1a8e0fc1.jpeg);
+
+        h1 {
+            border-bottom: 1px solid #a4a3a3;
+            padding: 10px;
+        }
+    }
+}
+
+h1 {
+    border-bottom: 1px solid #a4a3a3;
+    padding: 10px;
+}
+
+span {
+    padding: 5px;
+}
